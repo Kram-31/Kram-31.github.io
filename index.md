@@ -2,122 +2,57 @@
 layout: default
 ---
 
-Text can be **bold**, _italic_, ~~strikethrough~~ or `keyword`.
+# Bienvenue dans mon monde numérique
 
-[Link to another page](./another-page.html).
+Ce site est une **chronique de mes explorations** et de mes projets dans le domaine de la **cybersécurité**. Il sert de base de données personnelle pour les outils, les recherches et les exploits que j'ai menés.
 
-There should be whitespace between paragraphs.
+---
 
-There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
+## Mes Compétences et Mon Arsenal
 
-# Header 1
+Je déploie des compétences dans plusieurs domaines de la sécurité informatique :
 
-This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
+* **Sécurité offensive** : 
+    * Tests d'intrusion et audits de sécurité
+    * Ingénierie sociale et `phishing`
+* **Sécurité défensive** :
+    * Gestion des pare-feu et `IDS/IPS`
+    * Analyse de logiciels malveillants (`malware`)
+* **Infrastructure et Cloud** :
+    * Sécurisation de réseaux (`VPN`, `VLAN`)
+    * Configuration de serveurs Linux
+* **Programmation** : `Python`, `Go`, `Bash`
 
-## Header 2
+---
 
-> This is a blockquote following a header.
->
-> When something is important enough, you do it even if the odds are not in your favor.
+## Projets Principaux
 
-### Header 3
+Découvrez quelques-uns de mes travaux les plus importants. Chaque projet a été un défi unique qui m'a permis de perfectionner mes compétences.
 
-```js
-// Javascript code with syntax highlighting.
-var fun = function lang(l) {
-  dateformat.i18n = require('./lang/' + l)
-  return true;
-}
-```
+| Nom du Projet | Description | Technologies |
+|:--------------|:------------|:-------------|
+| **Project-01** | Un outil automatisé pour l'analyse de vulnérabilités sur des serveurs web. | `Python`, `Flask` |
+| **Defensive-Sec** | Une série de scripts pour renforcer la sécurité des systèmes Linux. | `Bash`, `Ansible` |
+| **CTF-Solution** | Mon write-up détaillé pour le CTF "CaptureTheFlag" de l'année 2024. | `Burp Suite`, `Wireshark` |
 
-```ruby
-# Ruby code with syntax highlighting
-GitHubPages::Dependencies.gems.each do |gem, version|
-  s.add_dependency(gem, "= #{version}")
-end
-```
+---
 
-#### Header 4
+## Un Aperçu de mon Code
 
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
+> "Le code est notre meilleur allié dans la guerre numérique."
 
-##### Header 5
+```python
+# Un script simple pour vérifier si un port est ouvert
+import socket
 
-1.  This is an ordered list following a header.
-2.  This is an ordered list following a header.
-3.  This is an ordered list following a header.
+def port_scanner(host, port):
+    try:
+        s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        s.settimeout(1)
+        s.connect((host, port))
+        print(f"Le port {port} est ouvert sur {host}")
+    except:
+        print(f"Le port {port} est fermé ou protégé")
 
-###### Header 6
-
-| head1        | head two          | three |
-|:-------------|:------------------|:------|
-| ok           | good swedish fish | nice  |
-| out of stock | good and plenty   | nice  |
-| ok           | good `oreos`      | hmm   |
-| ok           | good `zoute` drop | yumm  |
-
-### There's a horizontal rule below this.
-
-* * *
-
-### Here is an unordered list:
-
-*   Item foo
-*   Item bar
-*   Item baz
-*   Item zip
-
-### And an ordered list:
-
-1.  Item one
-1.  Item two
-1.  Item three
-1.  Item four
-
-### And a nested list:
-
-- level 1 item
-  - level 2 item
-  - level 2 item
-    - level 3 item
-    - level 3 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-
-### Small image
-
-![Octocat](https://github.githubassets.com/images/icons/emoji/octocat.png)
-
-### Large image
-
-![Branching](https://guides.github.com/activities/hello-world/branching.png)
-
-
-### Definition lists can be used with HTML syntax.
-
-<dl>
-<dt>Name</dt>
-<dd>Godzilla</dd>
-<dt>Born</dt>
-<dd>1952</dd>
-<dt>Birthplace</dt>
-<dd>Japan</dd>
-<dt>Color</dt>
-<dd>Green</dd>
-</dl>
-
-```
-Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
-```
-
-```
-The final element.
-```
+# Exemple d'utilisation
+port_scanner('google.com', 80)
